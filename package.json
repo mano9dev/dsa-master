@@ -4,7 +4,9 @@
   "description": "This repository contains Typescript based examples of many popular algorithms and data structures.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pg": "node playground/index.ts",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
