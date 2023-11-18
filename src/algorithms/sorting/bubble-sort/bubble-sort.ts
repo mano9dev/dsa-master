@@ -5,16 +5,18 @@ export class BubbleSort<T> extends Sort {
     //
 
     const tab = [...array];
-    let isSorted = true;
+    let isSorted = false;
     while (!isSorted) {
       let tabLength = tab.length;
-      this.isSorted = true;
+      let lastUnsorted = tabLength - 1;
+      isSorted = true;
       for (let i = 0; i < tabLength - 1; i++) {
         if (tab[i] > tab[i + 1]) {
           this.swap(tab, i, i + 1);
           isSorted = false;
         }
       }
+      lastUnsorted--;
     }
     return tab;
   }
